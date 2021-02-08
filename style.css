@@ -5,7 +5,7 @@
 }
 body{
     padding-top: 150px;
-    background-color: #000;
+    
     font-family: sans-serif;
 }
 #searchbox{
@@ -14,16 +14,21 @@ body{
 }
 #searchbox input,button{
     width: 75%;
-    border:2px solid white;
+    border:2px solid rgb(15, 15, 15);
     font-size: 18px;
     padding:12px;
-    background: transparent;
-    color:white;
+    
 }
 #searchbox button{
     width: 25%;
-    background: #eee;
-    color:white;
     float:right;
     border-left: 0px;
+}
+#food-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+#food-container img{
+    width:300px;
 }
