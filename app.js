@@ -29,22 +29,26 @@ fetch(url)
 }
 
 const renderFoodInfo = meal =>{
-    // console.log(meal);
     const Div = document.getElementById('foodDetail');
     Div.innerHTML =`
     <img src =${meal[0].strMealThumb} <br>
-     <h1> ${meal[0].strMeal}</h1>
-     <h4> ${meal[0].strIngredient1} </h4>
-     <h4> ${meal[0].strIngredient2} </h4>
-     <h4> ${meal[0].strIngredient3} </h4>
-     <h4> ${meal[0].strIngredient4} </h4>
-     <h4> ${meal[0].strIngredient5} </h4>
-     <h4> ${meal[0].strIngredient6} </h4>
-     <h4> ${meal[0].strIngredient7} </h4>
-     <h4> ${meal[0].strIngredient8} </h4>
-     <h4> ${meal[0].strIngredient9} </h4>
-     <h4> ${meal[0].strIngredient10} </h4>
-
+     
+    <div>
+    <h3>Ingredients</h3>
+    
+     <h6> ${meal[0].strMeal}</h6>
+     <h6> ${meal[0].strIngredient1} </h6>
+     <h6> ${meal[0].strIngredient2} </h6>
+     <h6> ${meal[0].strIngredient3} </h6>
+     <h6> ${meal[0].strIngredient4} </h6>
+     <h6> ${meal[0].strIngredient5} </h6>
+     <h6> ${meal[0].strIngredient6} </h6>
+     <h6> ${meal[0].strIngredient7} </h6>
+     <h6> ${meal[0].strIngredient8} </h6>
+     <h6> ${meal[0].strIngredient9} </h6>
+     <h6> ${meal[0].strIngredient10} </h6>
+     
+     </div>
     `;
 }
 
